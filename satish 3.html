@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Exercises</title>
+</head>
+<body>
+    <script>
+        <h1>liveserver</h1>
+        let text1 = "My name is:";
+        let myName = "Mani";  
+        let fullText = text1 + " " + myName;
+        console.log(fullText);
+        let coffee = 5;
+        let bagel = 3;
+        let totalCost = coffee + bagel;
+        let totalText = "Total cost: $" + totalCost;
+        console.log(totalText);
+        let totalTemplate = Total cost: $${totalCost};
+        console.log(totalTemplate);
+        alert(totalTemplate);
+        let coffeeCents = 599;
+        let bagelCents = 295;
+        let totalCents = coffeeCents + bagelCents;
+        let totalDollars = totalCents / 100;
+        let totalTextCents = "Total cost: $" + totalDollars.toFixed(2);
+        console.log(totalTextCents);
+        let totalTemplateCents = Total cost: $${(totalCents / 100).toFixed(2)};
+        console.log(totalTemplateCents);
+        let finalMessage = Total cost: $${(totalCents / 100).toFixed(2)}\n Thank you, come again!;
+        alert(finalMessage);
+        let basketballPrice = 20.95;
+        let tshirtPrice = 7.99;
+        let numBasketballs = 2;
+        let numTshirts = 2;
+        let totalItemCost = (basketballPrice * numBasketballs) + (tshirtPrice * numTshirts);
+        let totalItems = numBasketballs + numTshirts;
+        let itemText = `Items (${totalItems}): $${totalItemCost.toFixed(2)};
+        console.log(itemText)`;
+        let shipping = 4.99 * 2; // Two separate shipping charges
+        let shippingText = Shipping & handling: $${shipping.toFixed(2)};
+        console.log(shippingText);
+        let totalBeforeTax = totalItemCost + shipping;
+        let totalBeforeTaxText = Total before tax: $${totalBeforeTax.toFixed(2)};
+        console.log(totalBeforeTaxText);
+          let tax = Math.round(totalBeforeTax * 0.1 * 100) / 100;
+        let taxText = Estimated tax (10%): $${tax.toFixed(2)};
+        console.log(taxText);
+        let orderTotal = totalBeforeTax + tax;
+        let orderTotalText = Order total: $${orderTotal.toFixed(2)};
+        console.log(orderTotalText);
+        let orderSummary = `${itemText}\n${shippingText}\n${totalBeforeTaxText}\n${taxText}\n${orderTotalText};
+        alert(orderSummary)`;
+        let newTotalItemCost = (basketballPrice * 1) + (tshirtPrice * 1);
+        let newTotalBeforeTax = newTotalItemCost; 
+        let newTax = Math.round(newTotalBeforeTax * 0.1 * 100) / 100;
+        let newOrderTotal = newTotalBeforeTax + newTax;
+        let newOrderSummary = `Items (2): $${newTotalItemCost.toFixed(2)}\nShipping & handling: $0.00\nTotal before tax: $${newTotalBeforeTax.toFixed(2)}\nEstimated tax (10%): $${newTax.toFixed(2)}\nOrder total: $${newOrderTotal.toFixed(2)};
+        alert(newOrderSummary)`;
+    </script>
+</body>
+</html>
