@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 2: Numbers and Math</title>
+</head>
+<body>
+    <center>
+    <h1>Numbers and Math</h1>
+    <button onclick="calculateOrderCost()">Calculate Order Cost (2a)</button><br>
+    <button onclick="calculatePerPerson()">Calculate Per Person Cost (2b)</button><br>
+    <button onclick="calculateToasterAndShirts()">Calculate Toaster and Shirts Cost (2c)</button><br>
+    <button onclick="calculate10PercentTax()">Calculate 10% Tax (2d)</button><br>
+    <button onclick="calculate20PercentTax()">Calculate 20% Tax (2e)</button>
+
+</center>
+<style>
+    button {
+        width: 400px;
+        color: blue;
+    }
+</style>
+    <script>
+        // 2a: Calculate the cost of the order
+        function calculateOrderCost() {
+            const soup = 10;
+            const burgers = 3 * 8;
+            const iceCream = 5;
+            const total = soup + burgers + iceCream;
+            alert('Total Order Cost (2a): $' + total);
+        }
+
+        // 2b: Calculate how much each person pays (3 people)
+        function calculatePerPerson() {
+            const total = 10 + (3 * 8) + 5; // From 2a
+            const perPerson = total / 3;
+            alert('Cost Per Person (2b): $' + perPerson.toFixed(2));
+        }
+
+        // 2c: Calculate total cost of a toaster and 2 shirts
+        function calculateToasterAndShirts() {
+            const toaster = 18.50;
+            const shirts = 2 * 7.50;
+            const total = toaster + shirts;
+            alert('Total Cost (2c): $' + total);
+        }
+
+        // 2d: Calculate 10% tax for total in 2c
+        function calculate10PercentTax() {
+            const toaster = 18.50;
+            const shirts = 2 * 7.50;
+            const total = toaster + shirts;
+            const tax = total * 0.10;
+            alert('10% Tax (2d): $' + tax.toFixed(2));
+        }
+
+        // 2 e: Calculate 20% tax for total in 2c
+        function calculate20PercentTax() {
+            const toaster = 18.50;
+            const shirts = 2 * 7.50;
+            const total = toaster + shirts;
+            const tax = total * 0.20;
+            alert('20% Tax (2e): $' + tax.toFixed(2));
+        }
+    </script>
+</body>
+</html>
