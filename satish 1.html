@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Exercises</title>
+</head>
+<body>
+    <div id="output"></div>
+
+    <!-- 1.A Display my name -->
+    <h2>My Name Message Display</h2>
+    <button onclick="displayMessage('Manikanta')">Click on me</button><br>
+
+    <!-- 1.b Display good morning message -->
+    <h2>Good Morning Message Display</h2>
+    <button onclick="displayMessage('Good Morning')">Click on me</button>
+
+    <script>
+        
+        function displayMessage(message) {
+            document.getElementById("output").innerHTML = alert(message); 
+        }
+
+        // 1.C Calculate 10 + 5 in console
+        let a = 10 + 5;
+        console.log('10 + 5 =', a);
+
+        // 1.D Calculate 20 - 5 in console
+        let b = 20 - 5;
+        console.log('20 - 5 =', b);
+
+        // 1.E Calculate 2 + 2 - 5 in console
+        let c = 2 + 2 - 5;
+        console.log('2 + 2 - 5 =', c);
+
+        // 1.F Display 'Good morning' in the body
+        document.body.innerHTML += "<br>Good morning";
+
+        // 1.G Display my name on the web page
+        document.body.innerHTML += "<br>Manikanta";
+
+        // Challenge exercises:
+
+        // 1.H Calculate the total cost of the orders
+        let tShirt = 10, socks = 8, plates = 20;
+        let totalCost = tShirt + socks + plates;
+        document.body.innerHTML += <br>Total Cost of orders: ${totalCost};
+
+        // 1.I Calculate remaining money in the bank account
+        let amount = 100;
+        let spent = 20 + 50;
+        let earned = 200;
+        let balanceAmount = amount - spent + earned;
+        document.body.innerHTML += <br>Remaining balance: ${balanceAmount};
+    </script>
+</body>
+</html>
